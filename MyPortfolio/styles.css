@@ -1,0 +1,801 @@
+  body 
+  {
+    margin:0px;
+  }
+  #home
+  {
+    position:relative;
+    width:100dvw;
+    height:110dvh;
+    background-color:black;
+    overflow:hidden;
+    color:white;
+    display:flex;
+    //justify-content:space-evenly;
+    align-items:center;
+  }
+   header
+  {
+    position:relative;
+    color:white;
+    width:100dvw;
+    height:auto;
+    display:flex;
+    padding:30px 0px 30px 0px;
+    background-color:black;
+    align-items:end;
+    justify-content:space-evenly;
+    position:sticky;
+    top:0px;
+    z-index:40;
+  }
+  header #quee 
+  {
+    width:70%;
+    height:100%;
+    //background-color:green;
+    display:flex;
+    justify-content:space-evenly;
+  }
+ header #button 
+  {
+    display:none;
+  }
+  header button
+  {
+    width:100px;
+    //height:50%;
+    font-size:20px;
+    color:white;
+    background-color: transparent;
+    border:0px solid transparent;
+    border-bottom:5px solid red;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  header p 
+  {
+    font-size:60px;
+    //background-color:yellow;
+    margin:0px;
+  }
+  header button:active
+  {
+    width:100px;
+    background-color:red;
+  }
+  span 
+  {
+    color:red;
+  }
+  #move 
+  {
+    transition:all 5s;
+  }
+   #home h1 
+  {
+    width:50%;
+    height:15%;
+    text-align:center;
+    font-size:70px;
+    //background-color:blue;
+  }
+  #circle 
+  {
+    position:relative;
+    width:50%;
+    height:50%;
+    //border-radius:50%;
+   // border-top-left-radius:50%;
+   //border-top-right-radius:50%;
+   //box-shadow:0px 0px 20px 20px blue;
+    //overflow:hidden;
+  // animation:raki 3s infinite;
+    padding-left:30px;
+  // border:10px solid blue;
+   transition:transform 1s;
+  }
+  #circle::before
+  {
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    bottom:-520px;
+    border-radius:50%;
+    border:30px solid yellow;
+    background-color:blue;
+    transform:rotatex(85deg);
+    border-top-color: yellow;
+   box-shadow:50px 50px 50px 50px gold;
+    margin:0px;
+    left:-40px;
+  }
+  #circle img 
+  {
+    width:110%;
+    height:100%;
+    position:relative;
+    background-color: transparent;
+    border-bottom-left-radius:7%;
+    border-bottom-right-radius:30%;
+l
+  }
+  #about
+  {
+    position:relative;
+    width:100dvw;
+    height:100dvh;
+    background-color:white;
+  }
+  #about #ab,#ed,#pj,#ch
+  {
+    
+    width:100%;
+    height:5%;
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    font-weight:bold;
+  }
+  #about  #ab,#projects #pj,#contact #ch
+  {
+    position:relative;
+    background-color:red;
+    justify-content:center;
+    color:white;
+  }
+  #about #ed 
+  {
+    background-color:orange;
+    border-bottom:10px solid red;
+    color:blue;
+  }
+  #about #personal
+  {
+    width:100%;
+    height:45%;
+    display:flex;
+    //border-right:10px solid orange;
+  }
+  #about #intro
+  {
+    width:50%;
+    height:100%;
+    background-color:white;
+    padding:0px 20px 0px 20px;
+    font-size:35px;
+    display:flex;
+    align-items:start;
+    justify-content:center;
+    flex-direction:column;
+  }
+  #about img 
+  {
+    width:50dvw;
+    height:90%;
+    border-bottom:40px solid red;
+   // border-bottom-left-radius:50%; 
+    //background-color:black;
+  }
+ #about #education 
+ {
+   width:100dvw;
+   height:45%;
+   display:flex;
+   justify-content:space-evenly;
+   align-items:center;
+   //color:white;
+   font-size:30px;
+   text-align:center;
+   font-weight:bold;
+ }
+ .box 
+ {
+   width:30%;
+   height:90%;
+   //background-color:blue;
+  // border-radius:50%;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-evenly;
+   align-items:center;
+ }
+ .box label:nth-child(1)
+ {
+   font-size:50px;
+   color: blue;
+   border-bottom:5px dashed green;
+ }
+ .box .per
+ {
+   position:relative;
+   width:70%;
+   height:50%;
+   display:flex;
+   color:black;
+   font-size:70px;
+   justify-content:space-evenly;
+   align-items:center;
+  // border:20px solid black;
+   border-radius:50%;
+   //border:10px solid black;
+   box-shadow:0px 0px 20px 20px lightgray;
+ }
+ .box .pp 
+ {
+   z-index:10;
+ }
+ .per::before
+     {
+       position:absolute;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       content: "";
+       width:70%;
+       height:70%;
+       border-radius: 50%;
+       background-color:white;
+       z-index:1;
+     }
+ #skills 
+ {
+   position:relative;
+   width:100dvw;
+   height:99dvh;
+   display:flex;
+   flex-direction:column;
+   row-gap:10px;
+   background-color:;
+ }
+   #skills label
+  {
+    width:100%;
+    height:5%;
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+    background-color:red;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+ #skills #stand1
+ {
+   position:relative;
+   width:100%;
+   //margin-left:20px;
+   height:auto;
+   gap:10px;
+   background-color:white;
+   display:flex;
+   flex-direction:column;
+   align-items:start;
+   justify-content:space-evenly;
+ }
+ #skills #stand2 
+ {
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   column-gap:50px;
+   height:40%;
+   background-color:white;
+ }
+ #skills #stand1 .outer
+ {
+   position:relative;
+   display:flex;
+   align-items: center;
+   width:100%;
+   height:100px;
+   background-color:blue;
+ }
+ #skills #stand2 .outer
+ {
+   position:relative;
+   display:flex;
+   flex-direction:column-reverse;
+   justify-content:end;
+   width:25%;
+   height:80%;
+   background-color:blue;
+ }
+
+ #skills #stand1 .outer  p,#skills #stand2 .outer p
+ {
+   position:relative;
+   width:20%;
+   height:100%;
+   font-size:40px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   background-color:yellow;
+ }
+ #skills #stand2 .outer p 
+ {
+   width:100%;
+   height:15%;
+   background-color:yellow;
+   margin:0px;
+ }
+ #skills #stand1 .outer .inner
+ {
+   position: relative;
+   background-color:deeppink;
+   width:0%;
+   height:100px;
+// border-top-right-radius:50%;
+// border-bottom-right-radius:50%;
+
+ }
+ #skills #stand2  .outer .inner1
+ {
+   width:100%;
+   height:0%;
+   background-color:deeppink;
+ }
+ #skills #stand1 .outer label,#skills #stand2 .outer label
+ {
+   width:10%;
+   height:100%;
+   background-color:blue;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size:40px;
+   color:white;
+ }
+ #skills #stand2 .outer label
+{
+  width:100%;
+  height:15%;
+  background-color:blue;
+}
+#projects,#contact
+{
+  position:relative;
+  width:100dvw;
+  height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+#projects img 
+{
+  flex-grow:1;
+  position:relative;
+  height:30%;
+  width:30%;
+}
+#contact img,form
+{
+  position:relative;
+  width:100%;
+  height:50%;
+  display:flex;
+  align-items: center;
+  justify-items:center;
+  flex-direction:column;
+}
+#contact form #in-box 
+{
+  height:50%;
+  width:70%;
+  justify-items:space-evenly;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-evenly;
+  text-align: center;
+  box-shadow:0px 0px 10px 10px dimgray;
+}
+#contact form label
+{
+  display:flex;
+  align-items:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+#contact form label input
+{
+ padding:10px;
+ outline:none;
+}
+#contact form #in-box button
+{
+  padding:10px 20px;
+  background-color:blue;
+  color:white;
+  font-size:20px;
+  border-radius:10px;
+}
+
+
+
+  @keyframes raki 
+  {
+    0%
+    {
+    box-shadow:0px 0px 20px 20px yellow;
+    }
+    25%
+    {
+    box-shadow:0px 0px 20px 20px deeppink;
+    }
+    50%
+    {
+    box-shadow:0px 0px 20px 20px green;
+    }
+    75%
+    {
+    box-shadow:0px 0px 20px 20px red;
+    }
+    100%
+    {
+    box-shadow:0px 0px 20px 20px blue;
+    }
+  }
+  @keyframes loki
+  {
+    0%
+    {
+    transform:translateX(110%);
+    }
+    100% 
+    {
+      transform:translateX(0%);
+    }
+  }
+    @keyframes name
+  {
+    0%
+    {
+   transform:translateX(-110%);
+    }
+    100%
+    {
+    transform:translateX(0%);
+    }
+  }
+@media screen and (min-width:0px) and (max-width:768px)
+{
+  #home
+  {
+    position:relative;
+    width:100%;
+    height:100dvh;
+    background-color:black;
+    overflow:hidden;
+    color:white;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+  header
+  {
+    position:relative;
+    width:100dvw;
+    height:auto;
+    background-color:black;
+    display:flex;
+    padding:15px 0px 15px 0px;
+    align-items:center;
+    justify-content:space-around;
+    position:sticky;
+    top:0px;
+    z-index:40;
+  }
+ header p 
+  {
+    font-size:30px;
+  }
+ header #quee 
+{
+  position: absolute;
+  top:100%;
+ // margin-left:-20px;
+  width:100dvw;
+  height:100dvh;
+  gap:20px;
+  background-color:rgb(0,128,0);
+  //opacity:0.5;
+  z-index:10;
+  display:none;
+  transition:width 4s;
+}
+header #button
+{
+  display:block;
+  width:18%;
+  height:40px;
+  display:flex;
+  //padding:10px;
+  flex-direction:column;
+  gap:5px;
+  background-color:red;
+  border-bottom:0px;
+  border-radius:5px;
+}
+header #button .line 
+{
+  width:50px;
+  height:3px;
+  border-radius:5px;
+  background-color:white;
+  //border:1px solid red;
+}
+   #home h1 
+  {
+    width:50%;
+    height:15%;
+    text-align:center;
+    font-size:30px;
+    //background-color:blue;
+  }
+  /*
+  #circle 
+  {
+    position:relative;
+    width:50%;
+    height:50%;
+    //border-radius:50%;
+   // border-top-left-radius:50%;
+   //border-top-right-radius:50%;
+   //box-shadow:0px 0px 20px 20px blue;
+    //overflow:hidden;
+  // animation:raki 3s infinite;
+    padding-left:30px;
+  // border:10px solid blue;
+   transition:transform 1s;
+   //background-color:pink;
+  }
+  #circle::before
+  {
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    bottom:-520px;
+    border-radius:50%;
+    border:30px solid yellow;
+    background-color:blue;
+    transform:rotatex(85deg);
+    border-top-color: yellow;
+   box-shadow:50px 50px 50px 50px gold;
+    margin:0px;
+    left:-40px;
+  }
+  #circle img 
+  {
+    width:110%;
+    height:100%;
+    position:relative;
+    background-color: transparent;
+    border-bottom-left-radius:7%;
+    border-bottom-right-radius:30%;
+  }
+*/
+  #about 
+  {
+    position:relative;
+   // margin-top:100%;
+    width:100%;
+    height:185dvh;
+    display:flex;
+    flex-direction:column;
+    //align-items:center;
+    //justify-content:space-evenly;
+   // gap:10px;#42445A
+    background-color:white;
+  }
+  #about #ab,#ed,#pj
+  {
+    height:5dvh;
+    font-size:20px;
+    padding:5px;
+    font-weight:bold;
+  }
+  #about #personal 
+  {
+    width:100dvw;
+    height:85dvh;
+    display:flex;
+    flex-direction:column;
+    //background-color:pink;
+  }
+  #about #intro
+  {
+    position:relative;
+    width:88%;
+    height:30dvh;
+    background-color:blue;
+    padding:0px 20px 20px 20px;
+    font-size:15px;
+    display:flex;
+    //align-items:center;
+    //line-height:1.4;
+    //justify-content:center;
+    flex-direction:column;
+    color:white;
+  }
+  #about #personal img 
+  {
+    width:100%;
+    height:50dvh;
+    //background-color:blue;
+    border-bottom:10px solid red;
+  }
+ #about #education 
+ {
+   width:100dvw;
+   height:85dvh;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-evenly;
+   align-items:center;
+   //color:white;
+   font-size:17px;
+   text-align:center;
+   font-weight:bold;
+  // background-color:gold;
+ }
+ .box 
+ {
+   width:70%;
+   height:70%;
+   //background-color:blue;
+  //border-radius:50%;
+   display:flex;
+   gap:10px;
+   margin:10px;
+   flex-direction:column;
+   //justify-content:s;
+ }
+ .box label:nth-child(1)
+ {
+   font-size:20px;
+   color: blue;
+   border-bottom:5px dashed green;
+ }
+ .box .per
+ {
+   position:relative;
+   width:80%;
+   height:50%;
+   display:flex;
+   color:black;
+   font-size:30px;
+   justify-content:space-evenly;
+   align-items:center;
+   //transform:rotateY(50deg);
+  // border:20px solid black;
+   border-radius:50%;
+   //border:10px solid black;
+   box-shadow:0px 0px 5px 5px lightgray;
+ }
+ .box .pp 
+ {
+   z-index:10;
+ }
+ .per::before
+     {
+       position:absolute;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       content: "";
+       width:50%;
+       height:50%;
+       border-radius: 50%;
+       background-color:white;
+     }
+ #skills 
+ {
+   margin:0px;
+   position:relative;
+   width:100dvw;
+   height:auto;
+   display:flex;
+   flex-direction:column;
+   row-gap:2px;
+   background-color:white;
+ }
+ #skills label 
+ {
+   font-size:25px;
+ }
+ #skills #stand1
+ {
+   position:relative;
+   width:100%;
+   height:53dvh;
+   row-gap:2px;
+   display:flex;
+   flex-direction:column;
+   align-items:start;
+   justify-content:space-evenly;
+ }
+ #skills #stand2 
+ { 
+   position:relative;
+   display:flex;
+   justify-content: center;
+   column-gap:15px;
+   height:30dvh;
+ }
+ #skills #stand1 .outer
+ {
+   position:relative;
+   display:flex;
+   align-items: center;
+   width:100dvw;
+   height:30px;
+   background-color:blue;
+ }
+ #skills #stand2 .outer
+ {
+   position:relative;
+   display:flex;
+   flex-direction:column-reverse;
+   justify-content:end;
+   width:25%;
+   height:170px;
+   background-color:blue;
+ }
+
+ #skills #stand1 .outer  p,#skills #stand2 .outer p
+ {
+   position:relative;
+   width:20%;
+   height:100%;
+   font-size:15px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   background-color:yellow;
+ }
+ #skills #stand2 .outer p 
+ {
+   width:100%;
+   height:15%;
+   background-color:yellow;
+   margin:0px;
+ }
+ #skills #stand1 .outer .inner
+ {
+   position: relative;
+   background-color:deeppink;
+   width:0%;
+   height:30px;
+ }
+ #skills #stand2  .outer .inner1
+ {
+   width:100%;
+   height:0%;
+   background-color:deeppink;
+ }
+ #skills #stand1 .outer label,#skills #stand2 .outer label
+ {
+   width:10%;
+   height:100%;
+   background-color:blue;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size:15px;
+   color:white;
+ }
+ #skills #stand2 .outer label
+{
+  width:100%;
+  height:15%;
+  background-color:blue;
+}
